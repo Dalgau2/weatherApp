@@ -84,7 +84,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .time{
     font-size: 30px;
     font-weight: 700;
-    color: rgb(248, 239, 239);
+    color: rgb(29, 15, 15);
+    background-color: antiquewhite;
+  width: 25%;
+  margin-left:37.5%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
     
 }
 .heading{
