@@ -87,3 +87,26 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     color: rgb(248, 239, 239);
     
 }
+.heading{
+    text-align:center;
+    font-size: 100px;
+    font-weight: 700;
+    text-shadow:20px 20px 20px white;
+}
+@media (min-width:320px) and (max-width:425px){
+    .searchbar input{
+        width:95%;
+    }
+    .heading{
+        padding-top: 20px;
+        font-size:70px;
+    }
+    .location-name{
+        width:200px ;
+        padding:2px;
+        font-size:30px;
+    }
+    .temprature_weather{
+        width: 50%;
+    }
+}

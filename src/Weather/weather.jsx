@@ -64,10 +64,10 @@ console.log(dsp)
     return `${day},${date},${month},${year}`;
   };
 
-  const handleClickCity=(e)=>{
-    setQuery(e)
-    console.log(query)
-  }
+  // const handleClickCity=(e)=>{
+  //   setQuery(e)
+  //   console.log(query)
+  // }
 
 
   const filtercity=cities.filter((city)=>{
@@ -83,14 +83,7 @@ console.log(dsp)
           : "weatherbg"
       }
     >
-      <h1
-        style={{
-          textAlign: "center",
-          fontSize: "100px",
-          fontWeight: 700,
-          textShadow:'20px 20px 20px white'
-        }}
-      >
+      <h1 className="heading">
         Weather App
       </h1>
       <div className="main-container">
@@ -108,7 +101,7 @@ console.log(dsp)
          {filtercity.map((c)=>{
           return(
             <ul  style={{width:"100%",backgroundColor:"white",borderRadius:"10px",padding:"10px"}}>
-           <li style={{listStyle:"none",fontSize:"25px",fontWeight:400,borderBottom:"1px solid grey"}} onKeyPress={search} onClick={(()=>handleClickCity(c))}>
+           <li style={{listStyle:"none",fontSize:"25px",fontWeight:400,borderBottom:"1px solid grey"}} onKeyPress={search} onClick={(()=>setQuery(c))}>
             {c}
            </li>
             </ul>
